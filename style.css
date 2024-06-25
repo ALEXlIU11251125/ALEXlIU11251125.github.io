@@ -14,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #0a3c2f;
+  background-color: #e0f7fa; /* 浅蓝色背景 */
   font-family: 'DengXian', sans-serif;
 }
 
@@ -25,21 +25,21 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  background-color: #0d614b;
+  background-color: #ffcdd2; /* 粉色背景 */
   padding: 40px 60px;
 }
 
 h2 {
   font-size: 3em;
-  color: #fff;
+  color: #1976d2; /* 浅蓝色文本 */
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 
 .reset {
   padding: 15px 20px;
-  color: #267c65;
-  background-color: #fff;
+  color: #f48fb1; /* 粉色文本 */
+  background-color: #1976d2; /* 浅蓝色背景 */
   border: none;
   font-size: 1.5em;
   letter-spacing: 0.1em;
@@ -50,7 +50,7 @@ h2 {
 
 .reset:focus {
   color: #fff;
-  background-color: #267c65;
+  background-color: #f48fb1; /* 粉色背景 */
 }
 
 .game {
@@ -84,7 +84,7 @@ h2 {
   content: '';
   position: absolute;
   inset: 0;
-  background-color: #209d7b;
+  background-color: #f48fb1; /* 粉色背景 */
   transition: 0.25s;
   transform: rotateY(0deg);
   backface-visibility: hidden;
