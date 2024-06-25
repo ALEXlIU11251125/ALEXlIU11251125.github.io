@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'DengXian';
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400&display=swap');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +15,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #0a3c2f;
-  font-family: monospace;
+  font-family: 'DengXian', sans-serif;
 }
 
 .container {
@@ -80,7 +85,6 @@ h2 {
   position: absolute;
   inset: 0;
   background-color: #209d7b;
-  /* opacity: 0.85; */
   transition: 0.25s;
   transform: rotateY(0deg);
   backface-visibility: hidden;
