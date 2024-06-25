@@ -1,4 +1,4 @@
-const emojis = ['😍', '😍', '❤️', '❤️', '😵', '😵', '😭', '😭', '😎', '😎', '😃', '😃', '🤮', '🤮', '👍', '👍']
+const emojis = ['😍', '😍', '❤️', '❤️', '😵', '😵', '😭', '😭', '😎', '😎', '😃', '😃', '🤮', '🤮', '👍', '👍'];
 const shuffledEmojis = emojis.sort(() => Math.random() - 0.5);
 
 for (let i = 0; i < emojis.length; i++) {
@@ -10,8 +10,8 @@ for (let i = 0; i < emojis.length; i++) {
     this.classList.add('boxOpen');
 
     setTimeout(() => {
-      if (document.querySelectorAll('.boxOpen').length > 1) {
-        const openBoxes = document.querySelectorAll('.boxOpen');
+      const openBoxes = document.querySelectorAll('.boxOpen');
+      if (openBoxes.length > 1) {
         if (openBoxes[0].innerHTML === openBoxes[1].innerHTML) {
           openBoxes[0].classList.add('boxMatch');
           openBoxes[1].classList.add('boxMatch');
@@ -20,7 +20,7 @@ for (let i = 0; i < emojis.length; i++) {
           openBoxes[1].classList.remove('boxOpen');
 
           if (document.querySelectorAll('.boxMatch').length === emojis.length) {
-            alert('win');
+            alert('你赢了');
           }
         } else {
           setTimeout(() => {
@@ -34,3 +34,4 @@ for (let i = 0; i < emojis.length; i++) {
 
   document.querySelector('.game').appendChild(box);
 }
+
